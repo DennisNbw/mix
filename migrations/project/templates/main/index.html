@@ -1,0 +1,35 @@
+{% extends "_base.html" %}
+{% block content %}
+
+<h1>Welcome {{email}}!</h1>
+<h4>Share this Referral ID to earn more points: <b>{{id}}</b></h4>
+<br>
+<form class="form-invite" role="form" method="post" action="">
+
+    {{ form.csrf_token }}
+    {{ form.email(placeholder="email") }}
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="btn btn-success" type="submit">Send Invite!</button>
+    <span class="error">
+      {% if form.email.errors %}
+        {% for error in form.email.errors %}
+          {{ error }}
+        {% endfor %}
+      {% endif %}
+    </span>
+</form>
+<br>
+<p><a href="/logout">Logout</a>
+    <div class="card">
+        <h4 class="card-title"><b>Your Points: {{points}}</b></h4>
+        <h5 class="card-title"><b>People You referred:</b></h5>
+
+    </div>
+    {% for user in referred_users %}
+        <div class="card">
+            <div class="card-body">
+                {{user.email}}
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}

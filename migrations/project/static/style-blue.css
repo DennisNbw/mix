@@ -1,0 +1,128 @@
+html, body {
+    background: #4D8AFF;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    #jcmix #play {
+    border-left: 24px solid #5255CB;
+    cursor: pointer;
+    }
+    #jcmix #play:before {
+    border: 2px solid #5255CB;
+    }
+    #jcmix #play.active:after {
+        box-shadow: inset 12px 0 0 0 #4D8AFF; /*blue*/
+        border-left: 8px solid #fff;
+        background: #fff;
+    }
+    #jcmix #start {
+    border-right: 21.6px solid #5255CB;
+    }
+    #jcmix #start:before {
+        border: 2px solid #5255CB;
+    }
+    #jcmix #start:after {
+        background: #5255CB;
+    }
+    #jcmix #record {
+        border: 10px solid #5255CB;
+    }
+    #jcmix #record:before {
+        border: 2px solid #5255CB;
+    }
+    
+    #jcmix #timeline {
+        /*background: #5962ff;*/
+        background: #5255CB;
+    }
+    #jcmix #timeline #progress {
+        background: #fff;
+    }
+    #jcmix #record.active {
+        border-color: rgb(255, 110, 165);
+    }
+    #jcmix .mute-button {
+        font-weight: 600;
+        color: white;
+      background-color: #5151CE;
+    }
+    #jcmix .mute-button input:hover + span {
+      background-color: rgba(61, 75, 155, 0.63);
+      color: #fff;
+    }
+    #jcmix .mute-button label span{
+        line-height: 22px;
+    }
+    
+    #jcmix #timer .progress, #jcmix #timer .total {
+        color: white;
+        font-size: .7em;
+    }
+    
+    #jcmix #mixer #channelstrip div[data-channel] {
+        background: #5962ff; /*dark_blue*/
+        /*box-shadow: 0 2px 12px rgba(78, 79, 190, 0.81);*/
+    }
+    #jcmix #mixer #channelstrip div[data-channel]:last-child {
+        background: #5962ff!important; /*dark_blue*/
+    }
+    
+    #jcmix #mixer #channelstrip div[data-channel] .track-label {
+        color: #fff;
+        background: #5962ff!important;
+    }
+    #jcmix #mixer #channelstrip div[data-channel]:last-child .track-label {
+        background: #5962ff!important;
+    }
+    #jcmix #recordListButtons #toggleRecordings, #jcmix #recordListButtons #clearRecordings { 
+    background: #5962ff;
+    color: #fff;
+    }
+    #jcmix #recordListButtons #clearRecordings {
+      color: rgb(255, 110, 165)!important;
+    }
+    
+    #jcmix input[type='range']::-webkit-slider-thumb {
+    box-shadow: -4px 0 2px rgba(78, 79, 180, .4);
+      background: #fff;
+      border: none;
+    }
+    #jcmix input[type='range']::-webkit-slider-runnable-track {
+      background: #5962ff;
+    }
+    #jcmix #recordinglist a {
+      border-radius: 3px;
+      box-sizing: border-box;
+      text-decoration: none;
+      padding: 12px;
+      text-align: left;
+      line-height: 30px;
+      color: #fff;
+      font-weight: bold;
+      background: #5962ff;
+      font-size: 13px;
+      margin-bottom: 100px;
+    }
+    #jcmix #mixer #channelstrip div[data-channel]:last-child {
+     margin-right:5px;
+    }
+    #jcmix #mixer #channelstrip div[data-channel]:first-child {
+     margin-left:5px;
+    }
+    #jcmix #mixer #channelstrip div[data-channel]{
+    margin: 2px;
+    }
+    
+    Style Attribute {
+    }
+    #jcmix {
+    width: initial;
+    }
+    #jcmix #recordListButtons {
+        box-sizing: border-box;
+        padding: 0 4px;
+    }
+    
+    #jcmix .loader p {
+        font-size: 33px;
+        color: #fff;
+    }

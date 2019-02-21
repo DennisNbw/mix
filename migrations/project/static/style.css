@@ -1,0 +1,188 @@
+html, body {
+    background: #fafafa;
+    color:#4D8AFF;
+    }
+    
+    #jcmix #mixer #channelstrip div[data-channel]:last-child {
+        background: #e0efff!important;
+        border-radius: 16px;
+    }
+    #jcmix #mixer #channelstrip div[data-channel] {
+      position: relative;
+      float: left;
+      display: block;
+      background: #eaedf1;
+      height: 100%;
+      margin: 5px;
+      padding: 5px;
+      padding-top: 50px;
+      border-radius: 16px;
+    }
+    #jcmix #mixer #channelstrip div[data-channel] .track-label {
+        color: #4D8AFF;
+        background: #fff!important;
+        border-radius: 16px;
+    }
+    @media (min-width: 790px) {
+      #jcmix #mixer #channelstrip div[data-channel] {
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+        }
+    }
+    #jcmix .mute-button {
+      margin: 4px;
+      background-color: #fff;
+      border-radius: 20px;
+      border: none;
+      overflow: auto;
+      float: left;
+    }
+    #jcmix #timer {
+      font-family: "Arial";
+      color: #cdcdcd;
+      font-size: 1em;
+      padding: 0;
+      overflow: auto;
+      position: relative;
+      display: block;
+      clear: both;
+      background: none;
+      text-align: center;
+    }
+    #jcmix #mixer #channelstrip div[data-channel]:last-child .track-label {
+      background: #f8fbff!important;
+      border-radius: 20px;
+    }
+    #jcmix #timeline {
+      overflow: visible;
+      border-radius: 20px;
+      background: #eaedf1;
+      height: 16px;
+      width: 100%;
+      position: relative;
+      display: block;
+      clear: both;
+      z-index: 1;
+    cursor: pointer;
+    }
+    #jcmix .mute-button span {
+      line-height: 20px;
+      height: 20px;
+      width: 20px;
+      text-align: center;
+    }
+    #jcmix #timer span span {
+      width: initial;
+    }
+    
+    #jcmix #timer .progress {
+      width: initial;
+      float: left;
+    }
+    #jcmix #timer .total {float: right;
+      /*margin-left: 5px;*/
+      width: initial;
+    }
+    #jcmix #timeline #progress {
+      width: 16px;
+      height: 16px;
+      background: #4D8AFF;
+      position: absolute;
+      left: 0;
+      border-radius: 16px;
+    }
+    
+    #jcmix h1 {
+      color: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    #jcmix #play {
+      border-left: 24px solid #4d8aff;
+      cursor: pointer;
+    }
+    #jcmix #play:before {
+      border: 2px solid #4d8aff;
+    }
+    #jcmix #start, #jcmix #record {
+      display: none;
+    }
+    #jcmix #play.active:after {
+    background: #4d8aff;
+    border-left: 8px solid #4d8aff;
+    box-shadow: inset 12px 0 0 0 #ffffff;
+    }
+    #jcmix #transport {
+      clear: both;
+      display: block;
+      text-align: center;
+      width: 208px;
+      position: relative;
+      margin: -60px auto 0 auto;
+    }
+    #jcmix .mute-button label span {
+      cursor: pointer;
+    }
+    #jcmix .mute-button input:checked + span {
+      background-color: #ff2f78;
+      color: #fff;
+    }
+    #jcmix .mute-button input:checked:hover + span {
+      background-color: #d52c59;
+      color: #fff;
+    }
+    
+    #jcmix input[type='range'] {
+      padding: 8px 0px;
+      /*border: none;*/
+      background: none;
+      background-size: initial;
+    }
+    #jcmix input[type='range']::-webkit-slider-runnable-track {
+      position: relative;
+      width: 13em;
+      height: 0.1em;
+      border-radius: .1875em;
+      background: #dbdfe7;
+    }
+    
+    #jcmix input[type='range']::-webkit-slider-thumb {
+      font-size: 0.7em;
+      margin-top: -0.90em;
+      border: none;
+      width: 2em;
+      height: 2em;
+      border-radius: 10em;
+      background: #4d8aff;
+      /*box-shadow:none;  */
+      box-shadow: -.325em 0 .1em rgba(188, 195, 209, 0.4);
+      background-size: initial; }
+    
+    #jcmix input[type='range']::-moz-range-thumb {
+      font-size: 0.7em;
+      border: none;
+      width: 2em;
+      height: 2em;
+      border-radius: 10em;
+      background: #4d8aff;
+      box-shadow: -.325em 0 .1em rgba(188, 195, 209, 0.4);
+      background-size: initial;}
+    
+    #jcmix input[type='range']::-ms-thumb {
+      font-size: 0.7em;
+      border: none;
+      width: 2em;
+      height: 2em;
+      border-radius: 10em;
+      background: #4d8aff;
+      box-shadow: -.325em 0 .1em rgba(188, 195, 209, 0.4);
+      background-size: initial;
+    }
+    #jcmix .panner-range {
+    display: none;
+    position: absolute;
+    top: 8px;
+    left: 50px;
+    height: 30px;
+    }

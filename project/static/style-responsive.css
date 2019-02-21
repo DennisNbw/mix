@@ -1,0 +1,264 @@
+html, body {
+    /* background: #4D8AFF; */
+    background: #fafafa;
+    color:#4D8AFF;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    h1 {
+      display: none;
+      color: #4D8AFF!important;
+    }
+    #jcmix {
+      text-align: center;
+    /*    padding: 12px;*/
+      width: 50%;
+     max-width: initial; 
+     min-width: initial; 
+    /*margin: 0 auto;*/
+    margin-top: .2rem;
+    height: initial;
+    /*height: 400;*/
+    font-family: initial;
+    }
+    
+    #jcmix #mixer #channelstrip div[data-channel]:last-child {
+        background: #e0efff!important;
+        border-radius: 3px;
+    }
+    #jcmix #mixer #channelstrip div[data-channel] {
+    padding: 38px 4px;
+    box-sizing: border-box; 
+     flex-grow: 1;
+      /* position: relative; */
+      /* float: left; */; display: flex;justify-content: center;
+      background: #eaedf1;
+    width: initial;
+    /*margin: .2%;*/
+    align-items: stretch;
+      /*padding: 38px 0px;*/
+      /* padding-top: 50px; */
+      border-radius: 3px;
+    }
+    #jcmix #mixer #channelstrip div[data-channel] .track-label {
+        color: #4D8AFF;
+        background: #fff!important;
+      width: initial;
+        border-radius: 16px;
+    margin: 4px 0 0 0;
+      overflow: hidden;
+      width: 90%;
+    }
+    @media (min-width: 790px) {
+      #jcmix #mixer #channelstrip div[data-channel] {
+        flex-grow: 1;
+        padding-bottom: 42px;
+        display: flex;
+        align-content: center;
+        justify-items: center;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;text-align: center;
+        }
+    }
+    #jcmix .mute-button {
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 20px;
+      border: none;
+      overflow: auto;
+      /* float: left; */
+    }
+    #jcmix #timer {
+      font-family: "Arial";
+      color: #cdcdcd;
+      font-size: 1em;
+      padding: 0;
+      overflow: auto;
+      position: relative;
+      display: block;
+      clear: both;
+      background: none;
+      text-align: center;
+    }
+    #jcmix #mixer #channelstrip div[data-channel]:last-child .track-label {
+      background: #f8fbff!important;
+      border-radius: 20px;
+    }
+    #jcmix #timeline {
+      overflow: visible;
+      border-radius: 20px;
+      background: #eaedf1;
+      height: 16px;
+      width: 100%;
+      position: relative;
+      display: block;
+      clear: both;
+      z-index: 1;
+    cursor: pointer;
+    }
+    #jcmix .mute-button span {
+      line-height: 20px;
+      height: 20px;
+      width: 20px;
+      text-align: center;
+    }
+    #jcmix #timer span span {
+      width: initial;
+    }
+    
+    #jcmix #timer .progress {
+      width: initial;
+      float: left;
+    }
+    #jcmix #timer .total {float: right;
+      /*margin-left: 5px;*/
+      width: initial;
+    }
+    #jcmix #timeline #progress {
+      width: 16px;
+      height: 16px;
+      background: #4D8AFF;
+      position: absolute;
+      left: 0;
+      border-radius: 16px;
+    }
+    
+    #jcmix h1 {text-align: left;/* flex: none; */; font-size: 24px;2;; color: rgba(0, 0, 0, 0.7);
+      /* text-align: center; */
+      margin-bottom: 12px;
+    }
+    #jcmix #play {
+      border-left: 24px solid #4d8aff;
+      cursor: pointer;
+    }
+    #jcmix #play:before {
+      border: 2px solid #4d8aff;
+    }
+    #jcmix #start, #jcmix #record {
+      display: none;
+    }
+    #jcmix #play.active:after {
+    background: #4d8aff;
+    border-left: 8px solid #4d8aff;
+    box-shadow: inset 12px 0 0 0 #ffffff;
+    }
+    #jcmix #transport {
+      top: 8px;
+      /* clear: both; */
+      /* display: block; */
+      /* text-align: center; */
+      /* width: 208px; */
+      position: relative;
+       /* margin: -60px auto 0 auto; */
+    }
+    #jcmix .mute-button label span {
+      cursor: pointer;
+    }
+    #jcmix .mute-button input:checked + span {
+      background-color: #ff2f78;
+      color: #fff;
+    }
+    #jcmix .mute-button input:checked:hover + span {
+      background-color: #d52c59;
+      color: #fff;
+    }
+    
+    #jcmix input[type='range'] {
+      /* bottom: -14px; */
+    /*  top: 140px;*/
+    left: initial;
+       position: relative;
+       /* display: flex; */
+      /* width: initial;*/
+       padding: 0; 
+      /*border: none;*/
+      background: none;
+      margin: 5px 0px 0px 2px;
+      background-size: initial;
+    }
+    #jcmix input[type='range']::-webkit-slider-runnable-track {
+      position: relative;
+      width: 13em;
+      height: 0.1em;
+      border-radius: .1875em;
+      background: #dbdfe7;
+    }
+    #jcmix input[type='range']::-webkit-slider-thumb {
+      font-size: 0.7em;
+      margin-top: -0.90em;
+      border: none;
+      width: 2em;
+      height: 2em;
+      border-radius: 10em;
+      background: #4d8aff;
+      border: 2px solid #eaedf1;
+      box-shadow:none;  
+      /*box-shadow: -.325em 0 .1em rgba(188, 195, 209, 0.4);*/
+      background-size: initial;
+    }
+    #jcmix input[type='range']::-moz-range-thumb {
+      font-size: 0.7em;
+      border: none;
+      width: 2em;
+      height: 2em;
+      border-radius: 10em;
+      background: #4d8aff;
+      box-shadow: -.325em 0 .1em rgba(188, 195, 209, 0.4);
+      background-size: initial;
+    }
+    #jcmix input[type='range']::-ms-thumb {
+      font-size: 0.7em;
+      border: none;
+      width: 2em;
+      height: 2em;
+      border-radius: 10em;
+      background: #4d8aff;
+      box-shadow: -.325em 0 .1em rgba(188, 195, 209, 0.4);
+      background-size: initial;
+    }
+    #jcmix .panner-range {
+    display: none;
+    position: absolute;
+    top: 8px;
+    left: 50px;
+    height: 30px;
+    }
+    #jcmix #recordListButtons #toggleRecordings, #jcmix #recordListButtons #clearRecordings {
+    max-width: initial;
+    flex-grow: 1;
+    cursor: pointer;
+    padding: 5px;
+    margin: 10px auto;
+    background: #eaedf1;
+    color: #4D8AFF;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 2px;
+    display: block;
+    }
+    #jcmix #start, #jcmix #record {
+      display: block;
+      cursor: pointer;
+    }
+    #jcmix #recordinglist a {
+      border-radius: 3px;
+      box-sizing: border-box;
+      text-decoration: none;
+      padding: 12px;
+      text-align: left;
+      line-height: 30px;
+      color: #4D8AFF;;
+      font-weight: bold;
+      background: #eaedf1;
+      font-size: 13px;
+      margin-bottom: 100px;
+    }
+    #jcmix #recordListButtons #clearRecordings {
+    color: rgb(255, 90, 108);
+    margin-left: 2px;
+    }
+    #jcmix #recordListButtons #toggleRecordings {
+    margin-right: 2px;  
+    }
